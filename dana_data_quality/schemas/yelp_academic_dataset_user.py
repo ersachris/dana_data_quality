@@ -1,0 +1,26 @@
+import numpy as np
+
+schema = {
+    "user_id": np.str_,
+    "name": np.str_,
+    "review_count": np.uint32,
+    "yelping_since": np.str_,
+    "friends": object,
+    "useful": np.uint32,
+    "funny": np.uint32,
+    "cool": np.uint32,
+    "fans": np.uint32,
+    "elite": object,
+    "average_stars": np.float16,
+    "compliment_hot": np.uint32,
+    "compliment_more": np.uint32,
+    "compliment_profile": np.uint32,
+    "compliment_cute": np.uint32,
+    "compliment_list": np.uint32,
+    "compliment_note": np.uint32,
+    "compliment_plain": np.uint32,
+    "compliment_cool": np.uint32,
+    "compliment_funny": np.uint32,
+    "compliment_writer": np.uint32,
+    "compliment_photos": np.uint32,
+}

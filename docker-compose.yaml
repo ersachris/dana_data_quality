@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  executor:
+    container_name: executor
+    build: .
+    image: dana-data-quality
+    command: ["sleep", "infinity"]
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/opt/creds/dana-quality-test-cd8f016b7075.json
+    volumes:
+      - ./yelp_dataset:/opt/yelp_dataset
+      - ./creds:/opt/creds
+
